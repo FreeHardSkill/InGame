@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="В Игре || Платформа для геймеров">
+
+    <title>В игре | обзор игр</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/img/favicon.png}">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" th:href="@{/styles/vendor/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/styles/vendor/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/styles/app.css}">
+
+</head>
+
+<body class="tt-smooth-scroll">
+
+    <!-- Preloader-->
+    <div id="preloader">
+        <div class="pyramid-loader">
+            <div class="wrapper">
+              <span class="side side1"></span>
+              <span class="side side2"></span>
+              <span class="side side3"></span>
+              <span class="side side4"></span>
+              <span class="shadow"></span>
+            </div>  
+        </div>
+     </div>
+    <!-- Preloader-->
+
+    <!-- Main Wrapper Start -->
+    <div id="scroll-container">
+
+        <!-- HEADER MENU START -->
+        <header th:insert="~{blocks/header :: header}"></header>
+        <!-- HEADER MENU END -->
+
+       
+        <!-- BG-GAME PAGE # 1 START -->
+        <div class="bg-game-page pb-80">
+
+            <section class="title-banner py-80">
+                <div class="container-fluid">
+                    <h1 class="fw-500 text-center">Коллекция игр</h1>
+                </div>
+            </section>
+
+            <!-- GAMES SECTION START -->
+            <section class="games-section pb-80">
+                <div class="container-fluid">
+                    <div class="games-wrapper">
+                        <div class="row row-gap-4">
+                                <div  th:each="el : ${games}" class="col-xl-3 col-lg-4 col-md-6">
+                                    <a th:href="'/games/' + ${el.getId()}" class="game-card">
+                                        <div class="game-image shine">
+                                            <img th:src="@{${el.getImgUrl()}} " alt="">
+                                        </div>
+                                        <div class="game-content">
+                                            <h4 class="fw-600" th:text="${el.getName()}">Название</h4>
+                                            <p class="lightest-gray fw-400 mb-12" th:text="${el.getAnnotation()}">Аннотация</p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="review-box">
+                                                    <div class="box-1 mb-4p">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                            <path
+                                                                    d="M15.977 6.16432C15.9219 5.9946 15.7752 5.87091 15.5987 5.84529L10.6386 5.12451L8.42034 0.629933C8.3414 0.469933 8.17843 0.368652 8.00003 0.368652C7.82159 0.368652 7.65865 0.469933 7.57968 0.629933L5.36132 5.12451L0.401338 5.84529C0.224808 5.87091 0.0780893 5.9946 0.0229645 6.16429C-0.0321915 6.334 0.0138083 6.52028 0.141589 6.64482L3.73057 10.1434L2.88345 15.0834C2.85327 15.2593 2.92558 15.437 3.06992 15.5419C3.15158 15.6012 3.2483 15.6314 3.34548 15.6314C3.42011 15.6314 3.49498 15.6136 3.56354 15.5776L8 13.2451L12.4363 15.5775C12.5942 15.6606 12.7856 15.6467 12.9299 15.5419C13.0743 15.437 13.1466 15.2593 13.1164 15.0834L12.269 10.1434L15.8584 6.64478C15.9862 6.52028 16.0322 6.334 15.977 6.16432Z"
+                                                                    fill="#FFB930" />
+                                                        </svg>
+                                                        <p class="subtitle white" th:text="${el.getRating()}">Рейтинг</p>
+                                                    </div>
+                                                    <p class="lightest-gray fw-400" th:text="${el.getViews()}">Просмотры</p>
+                                                </div>
+                                                <div class="review-box">
+                                                    <p class="subtitle white" th:text="${el.getDownloads()}">Загрузки</p>
+                                                    <p class="subtitle white">Загрузок</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GAMES SECTION END -->
+
+            <!-- SIGN UP BANNER START -->
+            <section class="signup-banner ">
+                <div class="container-fluid">
+                    <div class="inner-banner-wrapper inner-banner-2 text-center">
+                        <h2 class="fw-500 mb-24">Стань частью нашей яркой игры<br class="d-sm-block d-none">
+                            присоединяйся к сообществу в дискорде
+                        </h2>
+                        <p class="mb-48">На самом деле кнопка еще не активна, так как зачем дискорд пет проекту <br class="d-sm-block d-none"> который врят ли увидит свет.</p>
+                        <a href="../../../../../../pixel/login.html" class="cus-btn-3">
+                            <span>Присоединиться</span>
+                            <span>Присоединиться</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- SIGN UP BANNER END -->
+
+        </div>
+        <!-- BG-GAME PAGE # 1 END -->
+
+
+        <!-- FOOTER START -->
+        <footer th:insert="~{blocks/footer :: footer}"></footer>
+        <!-- FOOTER END -->
+    </div>
+    <!-- Main Wrapper End -->
+
+    <!-- Back To Top Start -->
+    <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+
+    <!-- Mobile Menu Start -->
+    <div th:insert="~{blocks/mobile-menu :: mobile-menu}"></div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script th:src="@{/js/vendor/bootstrap.min.js}"></script>
+    <script th:src="@{/js/vendor/jquery-3.6.3.min.js}"></script>
+
+    <script th:src="@{/js/app.js}"></script>
+
+</body>
+
+</html>

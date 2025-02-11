@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="В Игре || Платформа для геймеров">
+
+    <title>В игре | Страница не найдена </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/img/favicon.png}">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" th:href="@{/styles/vendor/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/styles/vendor/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/styles/app.css}">
+
+</head>
+
+<body class="tt-smooth-scroll">
+
+    <!-- Preloader-->
+    <div id="preloader">
+        <div class="pyramid-loader">
+            <div class="wrapper">
+              <span class="side side1"></span>
+              <span class="side side2"></span>
+              <span class="side side3"></span>
+              <span class="side side4"></span>
+              <span class="shadow"></span>
+            </div>  
+        </div>
+     </div>
+    <!-- Preloader-->
+
+    <!-- Main Wrapper Start -->
+    <div id="scroll-container">
+
+        <!-- HEADER MENU START -->
+        <header th:insert="~{blocks/header :: header}"></header>
+        <!-- HEADER MENU END -->
+
+
+        <!-- BG-ERROR PAGE # 1 START -->
+        <div class="signup-page error-page-bg">
+
+        <!-- ERROR SECTION START -->
+        <div class="error-page">
+            <div class="container-fluid">
+                <div class="error-wrapper text-center">
+                    <h2 class="fw-700 black">404</h2>
+                    <div class="content-box">
+                        <h6 class="h2 light-gray mb-12 fw-500">Страница не найдена</h6>
+                        <p class="light-gray mb-48">К сожалению, мы не можем найти страницу, которую вы ищете.
+                            <br class="d-sm-block d-none"> Возможно, она была удалена, перемещена или вы ввели неверный адрес.</p>
+                        <a href="/" class="cus-btn-3 m-auto">
+                            <span>Вернутся на главную страницу</span>
+                            <span>Вернутся на главную страницу</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ERROR SECTION END -->
+
+        </div>
+        <!-- BG-ERROR PAGE # 1 END -->
+
+        <!-- FOOTER START -->
+        <footer th:insert="~{blocks/footer :: footer}"></footer>
+        <!-- FOOTER END -->
+    </div>
+    <!-- Main Wrapper End -->
+
+    <!-- Back To Top Start -->
+    <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+
+    <!-- Mobile Menu Start -->
+    <div th:insert="~{blocks/mobile-menu :: mobile-menu}"></div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script th:src="@{/js/vendor/bootstrap.min.js}"></script>
+    <script th:src="@{/js/vendor/jquery-3.6.3.min.js}"></script>
+    <script th:src="@{/js/vendor/jquery-validator.js}"></script>
+
+    <script th:src="@{/js/app.js}"></script>
+
+</body>
+
+</html>

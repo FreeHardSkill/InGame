@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="VIGRE || Платформа для геймеров">
+
+    <title>В игре | Детально об игре</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/img/favicon.png}">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" th:href="@{/styles/vendor/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/styles/vendor/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/styles/app.css}">
+
+</head>
+
+<body class="tt-smooth-scroll">
+
+    <!-- Preloader-->
+    <div id="preloader">
+        <div class="pyramid-loader">
+            <div class="wrapper">
+              <span class="side side1"></span>
+              <span class="side side2"></span>
+              <span class="side side3"></span>
+              <span class="side side4"></span>
+              <span class="shadow"></span>
+            </div>  
+        </div>
+     </div>
+    <!-- Preloader-->
+
+    <!-- Main Wrapper Start -->
+    <div id="scroll-container">
+
+        <!-- HEADER MENU START -->
+        <header th:insert="~{blocks/header :: header}"></header>
+        <!-- HEADER MENU END -->
+
+       
+        <!-- BG-GAME DETAIL # 1 START -->
+        <div class="bg-game-detail pb-80">
+
+            <section class="title-banner py-80">
+                <div class="container-fluid">
+                    <div class="title-wrapper">
+                        <img th:src="@{'/' + ${game.getImgUrl()}}" alt="" class="game-logo">
+                        <div class="content-box">
+                            <h1 class="fw-500 mb-24" th:text="${game.getName()}">Название</h1>
+                            <p class="mb-24">Исследуйте новейшие игры, узнавайте обзоры экспертов и общайтесь с другими игроками. </p>
+                            <div class="game-label">
+                                <p th:text="${game.getAnnotation()}">FPS | Arcade | PC | Mobile </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GAME DETAIL START -->
+            <section class="game-detail-section">
+                <div class="container-fluid">
+                    <div class="introduction mb-80">
+                        <h2 class="fw-600 mb-24">Информация</h2>
+                        <p th:text="${game.getFullText()}">Полный текст</p>
+                    </div>
+                    <div class="requirements pb-80 mb-80">
+                        <div class="requirements-heading text-center bg-primary p-24 mb-40">
+                            <h2 class="fw-600 white">Системные требования</h2>
+                        </div>
+                        <div class="row row-gap-4">
+                            <div class="col-xl-5">
+                                <div class="requirement-block">
+                                    <h4 class="fw-600 mb-24">Минимальные системные требования</h4>
+                                    <ul class="m-0">
+                                        <li>ОС: Windows 10 (64-bit)</li>
+                                        <li>Процессор: Intel Core i5-2500K @ 3.3GHz or AMD FX-6300 @ 3.5GHz</li>
+                                        <li>ОЗУ: 8 GB RAM</li>
+                                        <li>Видеокарта: NVIDIA GeForce GTX 960 (4GB) or AMD Radeon R9 380 (4GB)</li>
+                                        <li>DirectX: Version 11</li>
+                                        <li>Память: 50 GB available space</li>
+                                        <li>Звуковая карта: DirectX-compatible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 d-xl-flex d-none">
+                                <div class="vr-line m-auto"></div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="requirement-block">
+                                    <h4 class="fw-600 mb-24">Рекомендуемые системные требования</h4>
+                                    <ul class="m-0">
+                                        <li>ОС: Windows 10 (64-bit)</li>
+                                        <li>Процессор: Intel Core i5-2500K @ 3.3GHz or AMD FX-6300 @ 3.5GHz</li>
+                                        <li>ОЗУ: 8 GB RAM</li>
+                                        <li>Видеокарта: NVIDIA GeForce GTX 960 (4GB) or AMD Radeon R9 380 (4GB)</li>
+                                        <li>DirectX: Version 11</li>
+                                        <li>Память: 50 GB available space</li>
+                                        <li>Звуковая карта: DirectX-compatible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- GAME DETAIL END -->
+            
+            <!-- SIGN UP BANNER START -->
+            <section class="signup-banner mb-80">
+                <div class="container-fluid">
+                    <div class="inner-banner-wrapper inner-banner-2 text-center">
+                        <h2 class="fw-500 mb-24">Стань частью нашей яркой игры<br class="d-sm-block d-none">
+                            присоединяйся к нам
+                        </h2>
+                        <p class="mb-48">На самом деле кнопка еще не активна, так как я еще не доделать кнопка <br class="d-sm-block d-none"> который врят ли увидит свет.</p>
+                        <a href="login.html" class="cus-btn-3">
+                            <span>Присоединиться</span>
+                            <span>Присоединиться</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- SIGN UP BANNER END -->
+
+            <!-- TOURNAMENT SECTION START -->
+            <section class="tournament-section">
+                <div class="container-fluid">
+                    <div class="heading mb-48">
+                        <h2 class="fw-600">Турниры</h2>
+                        <a href="tournament.html" class="cus-arrow-btn">
+                            Посмотреть все
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <path
+                                    d="M13.3545 17.5C13.3545 14.5 16.1545 10.5 19.3545 10.5M19.3545 10.5C17.5212 10.5 13.3545 9.5 13.3545 3.5M19.3545 10.5H0.354492"
+                                    stroke="#FAFAFA" stroke-width="2" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="tournament-wrapper">
+                        <div class="row row-gap-4">
+                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                <a href="tournament-detail.html" class="tournament-card">
+                                    <div class="tournament-image shine">
+                                        <img th:src="@{/img/tournament/tournament-4.png}" alt="">
+                                    </div>
+                                    <div class="tournament-content">
+                                        <h4 class="fw-600 mb-4p">Финал Dota 2</h4>
+                                        <p class="light-gray mb-24">Командный турнир</p>
+                                        <div class="tag-bar mb-24">
+                                            <div class="tag-box">
+                                                <p class="fw-400 subtitle lightest-gray">
+                                                    15 января 2025 года
+                                                </p>
+                                            </div>
+                                            <div class="tag-box">
+                                                <p class="fw-400 subtitle lightest-gray">
+                                                    Призовой фонд 5000$
+                                                </p>
+                                            </div>
+                                            <div class="tag-box">
+                                                <p class="fw-400 subtitle lightest-gray">
+                                                    Бесплатная регистрация
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="functional-bar">
+                                            <div class="bar-1">
+                                                <div class="icon-box">
+                                                    <img th:src="@{/img/icons/icon-1.png}" alt="">
+                                                    <p class="white">6/12 Команд</p>
+                                                </div>
+                                                <div class="icon-box">
+                                                    <img th:src="@{/img/icons/icon-2.png}" alt="">
+                                                    <p class="white">67 Игроков</p>
+                                                </div>
+                                            </div>
+                                            <div class="circle-button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                    <path
+                                                        d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                        stroke="#FAFAFA" stroke-width="1.84615" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                <a href="tournament-detail.html" class="tournament-card">
+                                    <div class="tournament-image shine">
+                                        <img th:src="@{/img/tournament/tournament-5.png}" alt="">
+                                    </div>
+                                    <div class="tournament-content">
+                                        <h4 class="fw-600 mb-4p">Call Of Duty 4</h4>
+                                        <p class="light-gray mb-24">Командный турнир</p>
+                                        <div class="tag-bar mb-24">
+                                            <div class="tag-box">
+                                                <p class="fw-400 subtitle lightest-gray">
+                                                    28 февраля 2025 года
+                                                </p>
+                                            </div>
+                                            <div class="tag-box">
+                                                <p class="fw-400 subtitle lightest-gray">
+                                                    Призовой фонт 2000$
+                                                </p>
+                                            </div>
+                                            <div class="tag-box">
+                                                <p class="fw-400 subtitle lightest-gray">
+                                                    Бесплатная регистрация
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="functional-bar">
+                                            <div class="bar-1">
+                                                <div class="icon-box">
+                                                    <img th:src="@{/img/icons/icon-1.png}" alt="">
+                                                    <p class="white">3/6 Команд</p>
+                                                </div>
+                                                <div class="icon-box">
+                                                    <img th:src="@{/img/icons/icon-2.png}" alt="">
+                                                    <p class="white">44 Игрока</p>
+                                                </div>
+                                            </div>
+                                            <div class="circle-button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                    <path
+                                                        d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                        stroke="#FAFAFA" stroke-width="1.84615" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                <a href="tournament-detail.html" class="tournament-card">
+                                    <div class="tournament-image shine">
+                                        <img th:src="@{/img/tournament/tournament-6.png}" alt="">
+                                    </div>
+                                    <div class="tournament-content">
+                                        <h4 class="fw-600 mb-4p">Monsters Of Death </h4>
+                                        <p class="light-gray mb-24">Командный турнир</p>
+                                        <div class="tag-bar mb-24">
+                                            <div class="tag-box">
+                                                <p class="fw-400 subtitle lightest-gray">
+                                                    18 марта 2025 года
+                                                </p>
+                                            </div>
+                                            <div class="tag-box">
+                                                <p class="fw-400 subtitle lightest-gray">
+                                                    Призовой фонд 6000$
+                                                </p>
+                                            </div>
+                                            <div class="tag-box">
+                                                <p class="fw-400 subtitle lightest-gray">
+                                                    Бесплатная регистрация
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="functional-bar">
+                                            <div class="bar-1">
+                                                <div class="icon-box">
+                                                    <img th:src="@{/img/icons/icon-1.png}" alt="">
+                                                    <p class="white">8/15 Команд</p>
+                                                </div>
+                                                <div class="icon-box">
+                                                    <img th:src="@{/img/icons/icon-2.png}" alt="">
+                                                    <p class="white">88 игроков</p>
+                                                </div>
+                                            </div>
+                                            <div class="circle-button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                    <path
+                                                        d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                        stroke="#FAFAFA" stroke-width="1.84615" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- TOURNAMENT SECTION END -->
+
+        </div>
+        <!-- BG-GAME DETAIL # 1 END -->
+
+
+        <!-- FOOTER START -->
+        <footer th:insert="~{blocks/footer :: footer}"></footer>
+        <!-- FOOTER END -->
+    </div>
+    <!-- Main Wrapper End -->
+
+    <!-- Back To Top Start -->
+    <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+
+    <!-- Mobile Menu Start -->
+    <div th:insert="~{blocks/mobile-menu :: mobile-menu}"></div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script th:src="@{/js/vendor/bootstrap.min.js}"></script>
+    <script th:src="@{/js/vendor/jquery-3.6.3.min.js}"></script>
+
+    <script th:src="@{/js/app.js}"></script>
+
+</body>
+
+</html>
