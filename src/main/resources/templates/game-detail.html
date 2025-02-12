@@ -47,6 +47,16 @@
         <div class="bg-game-detail pb-80">
 
             <section class="title-banner py-80">
+                <div class="float-end">
+                    <a th:href="'/games/' + ${game.getId()} + '/edit'" class="btn btn-outline-primary">
+                        <span>Редактировать</span>
+                    </a>
+                    <form th:action="'/games/' + ${game.getId() + '/remove'}" method="post">
+                        <button th:href="'/games/' + ${game.getId()} + '/remove'" class="btn btn-outline-danger">
+                            <span>Удалить</span>
+                        </button>
+                    </form>
+                </div>
                 <div class="container-fluid">
                     <div class="title-wrapper">
                         <img th:src="@{'/' + ${game.getImgUrl()}}" alt="" class="game-logo">

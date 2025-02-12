@@ -71,4 +71,47 @@ public class GamesContoller {
         model.addAttribute("game",game);
         return "game-detail";
     }
+
+    @GetMapping("games/{id}/edit")
+    public String gameEdit(@PathVariable(value = "id") long id, Model model) {
+        Optional<Game> gameOptional = gamesRepository.findById(id);
+        if(gameOptional.isEmpty()) {
+            return "404";
+
+        }
+        Game game = gameOptional.get();
+        model.addAttribute("game",game);
+        return "game-edit";
+    }
+
+    @PostMapping("games/{id}/edit")
+    public String gamePostEdit(@PathVariable(value = "id") long id, @RequestParam String name, @RequestParam String annotation,
+                              @RequestParam String fullText, @RequestParam("file") MultipartFile file, Model model) throws IOException {
+        Game game = gamesRepository.findById(id).orElseThrow();
+
+        game.setName(name);
+        game.setAnnotation(annotation);
+        game.setFullText(fullText);
+        if(file != null) {
+            File uploadDir = new File(uploadPath + "images/games/");
+            if(!uploadDir.exists()) {
+                uploadDir.mkdir();
+            }
+
+            String uuidFile = UUID.randomUUID().toString();
+            String resultFileName = "images/games/" + uuidFile + "-" + file.getOriginalFilename();
+            game.setImgUrl(resultFileName);
+
+            file.transferTo(new File(uploadPath + resultFileName));
+        }
+        gamesRepository.save(game);
+        return "redirect:/games";
+    }
+
+    @PostMapping("games/{id}/remove")
+    public String gamePostDelete(@PathVariable(value = "id") long id,  Model model) throws IOException {
+        Game game = gamesRepository.findById(id).orElseThrow();
+        gamesRepository.delete(game);
+        return "redirect:/games";
+    }
 }

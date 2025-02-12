@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="В Игре || Платформа для геймеров">
+
+    <title>В игре | Редактировать игру</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/img/favicon.png}">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" th:href="@{/styles/vendor/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/styles/vendor/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/styles/app.css}">
+
+</head>
+
+<body class="tt-smooth-scroll">
+
+<!-- Preloader-->
+<div id="preloader">
+    <div class="pyramid-loader">
+        <div class="wrapper">
+            <span class="side side1"></span>
+            <span class="side side2"></span>
+            <span class="side side3"></span>
+            <span class="side side4"></span>
+            <span class="shadow"></span>
+        </div>
+    </div>
+</div>
+<!-- Preloader-->
+
+<!-- Main Wrapper Start -->
+<div id="scroll-container">
+
+    <!-- HEADER MENU START -->
+    <header th:insert="~{blocks/header :: header}"></header>
+    <!-- HEADER MENU END -->
+
+
+    <div class="signup-page">
+        <!-- SIGN UP SECTION START -->
+        <section class="signup-wrapper py-80">
+            <div class="container-fluid">
+                <div class="row align-items-center row-gap-4">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="signup-container">
+                            <h4 class="fw-500 mb-32 text-center">Редактирование игры</h4>
+                            <form method="post" class="signup-form" enctype="multipart/form-data">
+                                <div class="input-block mb-24">
+                                    <input type="text" name="name" th:value="${game.getName()}" id="name" required class="form-control form-control-2" autocomplete="off" placeholder="Название">
+                                </div>
+                                <div class="input-block mb-24">
+                                    <input type="text" name="annotation" th:value="${game.getAnnotation()}" id="annotation" required class="form-control form-control-2" autocomplete="off" placeholder="Аннотация">
+                                </div>
+                                <div class="input-block mb-12">
+                                    <textarea name="fullText"  id="fullText" required class="form-control form-control-2" autocomplete="off" placeholder="Полное описание" th:text="${game.getFullText()}"/>
+                                </div>
+                                <div class="input-block mb-12">
+                                    <input type="file" name="file">
+                                </div>
+                                <div class="btn-block text-center mb-48">
+                                    <button type="submit" class="cus-btn-3">
+                                        <span>Обновить</span>
+                                        <span>Обновить</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SIGN UP SECTION END -->
+    </div>
+
+
+    <!-- FOOTER START -->
+    <footer th:insert="~{blocks/footer :: footer}"></footer>
+    <!-- FOOTER END -->
+</div>
+<!-- Main Wrapper End -->
+
+<!-- Back To Top Start -->
+<button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+
+<!-- Mobile Menu Start -->
+<div th:insert="~{blocks/mobile-menu :: mobile-menu}"></div>
+<!-- Mobile Menu End -->
+
+<!-- Jquery Js -->
+<script th:src="@{/js/vendor/bootstrap.min.js}"></script>
+<script th:src="@{/js/vendor/jquery-3.6.3.min.js}"></script>
+
+<script th:src="@{/js/app.js}"></script>
+
+</body>
+
+</html>
