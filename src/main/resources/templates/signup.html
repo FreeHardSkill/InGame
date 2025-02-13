@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="VIGRE || Платформа для геймеров">
+
+    <title>В игре | Регистрация </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/img/favicon.png}">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" th:href="@{/styles/vendor/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/styles/vendor/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/styles/app.css}">
+
+</head>
+
+<body class="tt-smooth-scroll">
+
+    <!-- Preloader-->
+    <div id="preloader">
+        <div class="pyramid-loader">
+            <div class="wrapper">
+              <span class="side side1"></span>
+              <span class="side side2"></span>
+              <span class="side side3"></span>
+              <span class="side side4"></span>
+              <span class="shadow"></span>
+            </div>  
+        </div>
+     </div>
+    <!-- Preloader-->
+
+    <!-- Main Wrapper Start -->
+    <div id="scroll-container">
+
+        <!-- HEADER MENU START -->
+        <header th:insert="~{blocks/header :: header}"></header>
+        <!-- HEADER MENU END -->
+
+
+        <!-- BG-SIGN*UP PAGE # 1 START -->
+        <div class="signup-page">
+
+            <!-- SIGN UP SECTION START -->
+            <section class="signup-wrapper py-80">
+                <div class="container-fluid">
+                    <div class="row align-items-center row-gap-4">
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="signup-container">
+                                <h4 class="fw-500 mb-32 text-center">Регистрация</h4>
+                                <div th:if="${errorMessage}" class="alert alert-danger">
+                                    <p th:text="${errorMessage}"></p>
+                                </div>
+                                <form  th:action="@{/signup}" method="post" enctype="multipart/form-data" class="signup-form">
+
+                                    <!-- Имя пользователя -->
+                                    <div class="input-block mb-24">
+                                        <label for="username" class="form-label">Имя пользователя</label>
+                                        <input type="text" class="form-control form-control-2" id="username" name="username" required>
+                                    </div>
+
+                                    <!-- Почта -->
+                                    <div class="input-block mb-24">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control form-control-2" id="email" name="email" required>
+                                    </div>
+
+                                    <!-- Имя -->
+                                    <div class="input-block mb-24">
+                                        <label for="firstName" class="form-label">Имя</label>
+                                        <input type="text" class="form-control form-control-2" id="firstName" name="firstName" required>
+                                    </div>
+
+                                    <!-- Фамилия -->
+                                    <div class="input-block mb-24">
+                                        <label for="lastName" class="form-label">Фамилия</label>
+                                        <input type="text" class="form-control form-control-2" id="lastName" name="lastName" required>
+                                    </div>
+
+                                    <!-- Пол -->
+                                    <div class="input-block mb-24">
+                                        <label class="form-label">Пол</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="sex" id="male" value="male" required>
+                                            <label class="form-check-label" for="male">Мужской</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="sex" id="female" value="female">
+                                            <label class="form-check-label" for="female">Женский</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Фото -->
+                                    <div class="input-block mb-24">
+                                        <label for="photo" class="form-label">Загрузить фото</label>
+                                        <input type="file" class="form-control form-control-2" id="photo" name="file" accept="image/*">
+                                    </div>
+
+                                    <!-- Пароль -->
+                                    <div class="input-block mb-24">
+                                        <label for="password" class="form-label">Пароль</label>
+                                        <input type="password" class="form-control form-control-2" id="password" name="password" required>
+                                    </div>
+
+                                    <!-- Повтор пароля -->
+                                    <div class="input-block mb-24">
+                                        <label for="confirmPassword" class="form-label">Повторите пароль</label>
+                                        <input type="password" class="form-control form-control-2" id="confirmPassword" name="confirmPassword" required>
+                                    </div>
+
+                                    <!-- Кнопка отправки -->
+                                    <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+                                </form>
+                                <div class="text-center mt-3">
+                                    <a href="/login">Уже есть аккаунт? Войти</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-6">
+                            <div class="signup-image">
+                                <img th:src="@{/img/other/signup-image.png}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SIGN UP SECTION END -->
+
+        </div>
+        <!-- BG-SIGN*UP PAGE # 1 END -->
+
+        <!-- FOOTER START -->
+       <footer th:insert="~{blocks/footer :: footer}"></footer>
+        <!-- FOOTER END -->
+    </div>
+    <!-- Main Wrapper End -->
+
+    <!-- Back To Top Start -->
+    <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+
+    <!-- Mobile Menu Start -->
+    <div th:insert="~{blocks/mobile-menu :: mobile-menu}"></div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script th:src="@{/js/vendor/bootstrap.min.js}"></script>
+    <script th:src="@{/js/vendor/jquery-3.6.3.min.js}"></script>
+    <script th:src="@{/js/vendor/jquery-validator.js}"></script>
+
+    <script th:src="@{/js/app.js}"></script>
+
+</body>
+
+</html>

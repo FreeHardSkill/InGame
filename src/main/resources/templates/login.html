@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="VIGRE || Платформа для геймеров">
+
+    <title>В игре | Вход</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/img/favicon.png}">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" th:href="@{/styles/vendor/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/styles/vendor/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/styles/app.css}">
+
+</head>
+
+<body class="tt-smooth-scroll">
+
+    <!-- Preloader-->
+    <div id="preloader">
+        <div class="pyramid-loader">
+            <div class="wrapper">
+              <span class="side side1"></span>
+              <span class="side side2"></span>
+              <span class="side side3"></span>
+              <span class="side side4"></span>
+              <span class="shadow"></span>
+            </div>  
+        </div>
+     </div>
+    <!-- Preloader-->
+
+    <!-- Main Wrapper Start -->
+    <div id="scroll-container">
+
+        <!-- HEADER MENU START -->
+        <header th:insert="~{blocks/header :: header}"></header>
+        <!-- HEADER MENU END -->
+
+
+        <!-- BG-SIGN*UP PAGE # 1 START -->
+        <div class="signup-page">
+
+            <!-- SIGN UP SECTION START -->
+            <section class="signup-wrapper py-80">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-6">
+                            <div class="signup-container">
+                                <h4 class="fw-500 mb-32 text-center">Авторизация</h4>
+                                <form method="post" th:action="@{/process_login}" class="signup-form">
+                                    <div class="input-block mb-24">
+                                        <input type="text" name="username" required class="form-control form-control-2" placeholder="Имя пользователя">
+                                    </div>
+                                    <div class="input-block mb-12">
+                                        <input type="password" name="password" required class="form-control form-control-2">
+                                    </div>
+                                    <div class="input-block text-center mb-12">
+                                        <p>or</p>
+                                    </div>
+                                    <div class="row row-gap-4 mb-48">
+                                        <div class="col-md-6 col-6">
+                                            <a href="" class="media-link">
+                                                <img th:src="@{/img/icons/google-icon.png}" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 col-6">
+                                            <a href="" class="media-link">
+                                                <img th:src="@{/img/icons/fb-icon.png}" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="btn-block text-center mb-48">
+                                        <button type="submit" class="cus-btn-3">
+                                            <span>Войти</span>
+                                            <span>Войти</span>
+                                        </button>
+                                    </div>
+                                    <div class="text-block text-center">
+                                        <p th:if="${param.error}">Неверный логин или пароль</p>
+                                    </div>
+                                    <div class="text-block text-center">
+                                        <p>У вас нет аккаунта? <a href="/signup" class="color-primary">Регистрация</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-6">
+                            <div class="signup-image">
+                                <img th:src="@{/img/other/signup-image.png}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SIGN UP SECTION END -->
+
+        </div>
+        <!-- BG-SIGN*UP PAGE # 1 END -->
+
+        <!-- FOOTER START -->
+       <footer th:insert="~{blocks/footer :: footer}"></footer>
+        <!-- FOOTER END -->
+    </div>
+    <!-- Main Wrapper End -->
+
+    <!-- Back To Top Start -->
+    <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+
+    <!-- Mobile Menu Start -->
+    <div th:insert="~{blocks/mobile-menu :: mobile-menu}"></div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script th:src="@{/js/vendor/bootstrap.min.js}"></script>
+    <script th:src="@{/js/vendor/jquery-3.6.3.min.js}"></script>
+    <script th:src="@{/js/vendor/jquery-validator.js}"></script>
+
+    <script th:src="@{/js/app.js}"></script>
+
+</body>
+
+</html>

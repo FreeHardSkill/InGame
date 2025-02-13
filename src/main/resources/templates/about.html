@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="VIGRE || Платформа для геймеров">
+
+    <title>VIgre</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/img/favicon.png}">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" th:href="@{/styles/vendor/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{/styles/vendor/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/styles/vendor/slick.css}">
+    <link rel="stylesheet" th:href="@{/styles/vendor/slick-theme.css}">
+    <link rel="stylesheet" th:href="@{/styles/app.css}">
+
+</head>
+
+<body class="tt-smooth-scroll">
+
+<!-- Preloader-->
+<div id="preloader">
+    <div class="pyramid-loader">
+        <div class="wrapper">
+            <span class="side side1"></span>
+            <span class="side side2"></span>
+            <span class="side side3"></span>
+            <span class="side side4"></span>
+            <span class="shadow"></span>
+        </div>
+    </div>
+</div>
+<!-- Preloader-->
+
+<!-- Main Wrapper Start -->
+<div id="scroll-container">
+
+    <!-- HEADER MENU START -->
+    <header th:replace="~{blocks/header :: header}"></header>
+    <!-- HEADER MENU END -->
+
+        <!-- BG-ABOUT PAGE # 1 START -->
+        <div class="about-page">
+
+            <section class="title-banner py-80">
+                <div class="container-fluid">
+                    <h1 class="fw-500 text-center">О нас</h1>
+                </div>
+            </section>
+
+            <!-- ABOUT US SECTION START -->
+            <section class="about-us-section mb-80">
+                <div class="container-fluid">
+                    <div class="about-container mb-80">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <h3 class="fw-500 mb-24">О платформе VIgre</h3>
+                                <p class="light-gray mb-24">Платформа принадлежит будущему гению разработки freehardskill</p>
+                                
+                                <p class="light-gray mb-24">это всего навсего пет проект для того чтобы я мог показать свои знания в области разработки</p>
+                            
+                                <p class="light-gray mb-24">Так что надеюсь вы не разочарованы что тут не работает половина функций :D</p>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <img th:src="@{/img/other/about-image.png}" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TEAM SECTION START -->
+                    <div class="team-container">
+                        <h2 class="fw-600 mb-48">Знакомство с командой</h2>
+                        <div class="row row-gap-4">
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                                <div class="team-member-block">
+                                    <div class="image-box">
+                                        <img th:src="@{/img/team/team-1.png}" alt="">
+                                    </div>
+                                    <div class="content-box">
+                                        <h4 class="fw-600">Сергей Локтионов</h4>
+                                        <p>Team Lead</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                                <div class="team-member-block">
+                                    <div class="image-box">
+                                        <img th:src="@{/img/team/team-2.png}" alt="">
+                                    </div>
+                                    <div class="content-box">
+                                        <h4 class="fw-600">Сергей Локтионов</h4>
+                                        <p>HR Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                                <div class="team-member-block">
+                                    <div class="image-box">
+                                        <img th:src="@{/img/team/team-3.png}" alt="">
+                                    </div>
+                                    <div class="content-box">
+                                        <h4 class="fw-600">Сергей Локтионов</h4>
+                                        <p>Community Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- TEAM SECTION END -->
+                </div>
+            </section>
+            <!-- ABOUT US SECTION END -->
+
+            <!-- SIGN UP BANNER START -->
+            <section class="signup-banner mb-80">
+                <div class="container-fluid">
+                    <div class="inner-banner-wrapper inner-banner-2 text-center">
+                        <h2 class="fw-500 mb-24">Стань частью нашей яркой игры<br class="d-sm-block d-none">
+                            присоединяйся к сообществу
+                        </h2>
+                        <p class="mb-48">Пока я не знаю что тут написать <br class="d-sm-block d-none"> так что просто жми.</p>
+                        <a href="/signup" class="cus-btn-3">
+                            <span>Присоединиться</span>
+                            <span>Присоединиться</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- SIGN UP BANNER END -->
+
+        </div>
+        <!-- BG-ABOUT PAGE # 1 END -->
+
+        <!-- FOOTER START -->
+    <footer th:replase="~{blocks/footer :: footer}"></footer>
+        <!-- FOOTER END -->
+    </div>
+    <!-- Main Wrapper End -->
+
+    <!-- Back To Top Start -->
+    <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+
+    <!-- Mobile Menu Start -->
+    <div th:replace="~{blocks/mobile-menu :: mobile-menu}"></div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script th:src="@{/js/vendor/bootstrap.min.js}"></script>
+    <script th:src="@{/js/vendor/jquery-3.6.3.min.js}"></script>
+
+    <script th:src="@{/js/app.js}"></script>
+
+</body>
+
+</html>

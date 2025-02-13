@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="PYXEL || Ultimate Gaming HTML Template">
+
+    <title>PYXEL</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../../../pixel/assets/media/favicon.png">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="../../../../../../pixel/assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="../../../../../../pixel/assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../../pixel/assets/css/app.css">
+
+</head>
+
+<body class="tt-smooth-scroll">
+
+    <!-- Preloader-->
+    <div id="preloader">
+        <div class="pyramid-loader">
+            <div class="wrapper">
+              <span class="side side1"></span>
+              <span class="side side2"></span>
+              <span class="side side3"></span>
+              <span class="side side4"></span>
+              <span class="shadow"></span>
+            </div>  
+        </div>
+     </div>
+    <!-- Preloader-->
+
+    <!-- Main Wrapper Start -->
+    <div id="scroll-container">
+
+        <!-- HEADER MENU START -->
+        <header class="header">
+            <div class="container-fluid">
+                <nav class="navigation d-flex align-items-center justify-content-between">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <img src="../../../../../../pixel/assets/media/logo.png" alt="/logo" class="header-logo">
+                    </a>
+                    <div class="menu-button-right">
+                        <div class="main-menu__nav">
+                            <ul class="main-menu__list">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);">Game
+                                        <i class="fa-thin fa-chevron-down header-arrow d-xl-block d-none"></i>
+                                    </a>
+                                    <ul>
+                                        <li><a href="games.html">Games</a></li>
+                                        <li><a href="../../../../../../pixel/game-detail.html">Game Detail</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="active">Tournament
+                                        <i class="fa-thin fa-chevron-down header-arrow d-xl-block d-none"></i>
+                                    </a>
+                                    <ul>
+                                        <li><a href="tournament.html" class="active">Tournament</a></li>
+                                        <li><a href="tournament-detail.html">Tournament Detail</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);">Live Stream
+                                        <i class="fa-thin fa-chevron-down header-arrow d-xl-block d-none"></i>
+                                    </a>
+                                    <ul>
+                                        <li><a href="../../../../../../pixel/live-stream.html">Live Stream</a></li>
+                                        <li><a href="../../../../../../pixel/live-stream-detail.html">Live Stream Detail</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);">Pages
+                                        <i class="fa-thin fa-chevron-down header-arrow d-xl-block d-none"></i>
+                                    </a>
+                                    <ul>
+                                        <li><a href="../../../../../../pixel/tech-updates.html">Tech Updates</a></li>
+                                        <li><a href="../../../../../../pixel/tech-update-detail.html">Tech Updates Detail</a></li>
+                                        <li><a href="../../../../../../pixel/register.html">Register</a></li>
+                                        <li><a href="signup.html">Signup</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="../../../../../../pixel/404.html">404</a></li>
+                                        <li><a href="../../../../../../pixel/contact.html">Contact</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-menu__right">
+                        <div class="search-heart-icon d-sm-flex d-none align-items-center gap-24">
+                            <a href="" class="notification-bell">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M19.2657 12.3217V10.0781C19.2657 6.80522 17.0902 4.0312 14.1094 3.12516V2.10938C14.1094 0.946266 13.1632 0 12.0001 0C10.8369 0 9.89068 0.946266 9.89068 2.10938V3.12516C6.9099 4.0312 4.73443 6.80517 4.73443 10.0781V12.3217C4.73443 15.1966 3.63859 17.9227 1.64879 19.9977C1.45379 20.2011 1.39899 20.5011 1.50952 20.7602C1.62005 21.0194 1.87459 21.1875 2.1563 21.1875H8.55516C8.88179 22.7903 10.3023 24 12.0001 24C13.6979 24 15.1183 22.7903 15.4449 21.1875H21.8438C22.1255 21.1875 22.38 21.0194 22.4905 20.7602C22.6011 20.5011 22.5463 20.2011 22.3513 19.9977C20.3615 17.9227 19.2657 15.1965 19.2657 12.3217ZM11.2969 2.10938C11.2969 1.72167 11.6124 1.40625 12.0001 1.40625C12.3878 1.40625 12.7032 1.72167 12.7032 2.10938V2.84663C12.4718 2.82431 12.2372 2.8125 12.0001 2.8125C11.7629 2.8125 11.5284 2.82431 11.2969 2.84663V2.10938ZM12.0001 22.5938C11.0834 22.5938 10.3019 22.0059 10.0116 21.1875H13.9885C13.6982 22.0059 12.9167 22.5938 12.0001 22.5938ZM3.67177 19.7812C5.27307 17.6348 6.14068 15.0371 6.14068 12.3217V10.0781C6.14068 6.84727 8.7692 4.21875 12.0001 4.21875C15.2309 4.21875 17.8594 6.84727 17.8594 10.0781V12.3217C17.8594 15.0371 18.727 17.6348 20.3284 19.7812H3.67177Z"
+                                        fill="#FAFAFA" />
+                                </svg>
+                            </a>
+                            <div class="profile">
+                                <div class="img-box">
+                                    <img src="../../../../../../pixel/assets/media/user/user-1.png" alt="some user image">
+                                </div>
+                                <div class="user">
+                                    <p class="white">Klein</p>
+                                    <i class="fa-light fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="" class="subtitle"><i class="fa-light fa-user"></i>&nbsp;Profile</a></li>
+                                    <li><a href="" class="subtitle"><i class="fa-light fa-envelope"></i>&nbsp;Inbox</a></li>
+                                    <li><a href="" class="subtitle"><i class="fa-light fa-gear"></i>&nbsp;Settings</a></li>
+                                    <li><a href="" class="subtitle"><i class="fa-light fa-circle-info"></i>&nbsp;Help</a></li>
+                                    <li><a href="" class="subtitle"><i class="fa-light fa-right-from-bracket"></i>&nbsp;Sign Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="d-xl-none d-flex main-menu__toggler mobile-nav__toggler">
+                            <img src="../../../../../../pixel/assets/media/icons/menu-2.png" alt="">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- HEADER MENU END -->
+
+       
+        <!-- BG-GAME PAGE # 1 START -->
+        <div class="bg-tournament-page">
+
+            <section class="title-banner py-80">
+                <div class="container-fluid">
+                    <h1 class="fw-500 text-center">Tournaments</h1>
+                </div>
+            </section>
+
+            <section class="tournament-tabs pb-80">
+                <div class="container-fluid">
+                    <div class="tournament-nav mb-48">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item active" role="presentation">
+                                <button class="nav-link active" id="ongoing-tab" data-bs-toggle="tab" data-bs-target="#ongoing" type="button" role="tab"
+                                    aria-controls="ongoing" aria-selected="true">Ongoing</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="completed-tab" data-bs-toggle="tab" data-bs-target="#completed" type="button" role="tab"
+                                    aria-controls="completed" aria-selected="false">Completed</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="upcoming-tab" data-bs-toggle="tab" data-bs-target="#upcoming" type="button" role="tab"
+                                    aria-controls="upcoming" aria-selected="false">Upcoming</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="champion-tab" data-bs-toggle="tab" data-bs-target="#champion" type="button" role="tab"
+                                    aria-controls="champion" aria-selected="false">Championships</button>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="ongoing" role="tabpanel" aria-labelledby="ongoing-tab">
+                            <div class="tournament-wrapper">
+                                <div class="row row-gap-4">
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-4.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-5.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">CS-GO Competitive</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-6.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-7.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-8.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">CS-GO Competitive</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-9.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-10.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-11.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">CS-GO Competitive</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-4.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">
+                            <div class="tournament-wrapper">
+                                <div class="row row-gap-4">
+                                    
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-6.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-7.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-8.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">CS-GO Competitive</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-9.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-10.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-4.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-7.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-8.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">CS-GO Competitive</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="upcoming" role="tabpanel" aria-labelledby="upcoming-tab">
+                            <div class="tournament-wrapper">
+                                <div class="row row-gap-4">
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-4.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-5.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">CS-GO Competitive</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-6.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-7.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-10.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-11.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">CS-GO Competitive</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-4.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="champion" role="tabpanel" aria-labelledby="champion-tab">
+                            <div class="tournament-wrapper">
+                                <div class="row row-gap-4">
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-5.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">CS-GO Competitive</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-6.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-7.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-8.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">CS-GO Competitive</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-6.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-7.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Valorant Champions</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-8.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">CS-GO Competitive</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <a href="tournament-detail.html" class="tournament-card">
+                                            <div class="tournament-image shine">
+                                                <img src="../../../../../../pixel/assets/media/tournament/tournament-9.png" alt="">
+                                            </div>
+                                            <div class="tournament-content">
+                                                <h4 class="fw-600 mb-4p">Dota 2 Finale</h4>
+                                                <p class="light-gray mb-24">Team Tournament</p>
+                                                <div class="tag-bar mb-24">
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            January 15th, 2025
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            5000 USD Prize
+                                                        </p>
+                                                    </div>
+                                                    <div class="tag-box">
+                                                        <p class="fw-400 subtitle lightest-gray">
+                                                            Free Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="functional-bar">
+                                                    <div class="bar-1">
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-1.png" alt="">
+                                                            <p class="white">6/12 Teams</p>
+                                                        </div>
+                                                        <div class="icon-box">
+                                                            <img src="../../../../../../pixel/assets/media/icons/icon-2.png" alt="">
+                                                            <p class="white">67 Players</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="circle-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                            <path
+                                                                d="M18.3281 21.6926C18.3281 18.9234 20.9127 15.2311 23.8666 15.2311M23.8666 15.2311C22.1743 15.2311 18.3281 14.308 18.3281 8.76953M23.8666 15.2311H6.32812"
+                                                                stroke="#FAFAFA" stroke-width="1.84615" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination mt-48">
+                        <ul id="border-pagination">
+                            <li>
+                            </li>
+                            <li><a href="" class="active">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path
+                                            d="M4.33044 0.239638C4.01097 0.559111 4.01091 1.07718 4.33049 1.39671L11.9337 8.9998L4.33044 16.6033C4.01097 16.9227 4.01091 17.4408 4.33049 17.7603C4.65002 18.0799 5.16804 18.0799 5.48757 17.7603L13.6694 9.57831C13.8228 9.42488 13.909 9.21678 13.909 8.9998C13.909 8.78282 13.8228 8.57468 13.6693 8.42129L5.48751 0.239693C5.16804 -0.0798885 4.64997 -0.0798888 4.33044 0.239638Z"
+                                            fill="#FAFAFA" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SIGN UP BANNER START -->
+            <section class="signup-banner ">
+                <div class="container-fluid">
+                    <div class="inner-banner-wrapper inner-banner-2 text-center">
+                        <h2 class="fw-500 mb-24">Become Part of Our Vibrant Gaming <br class="d-sm-block d-none">
+                            Community on Discord!
+                        </h2>
+                        <p class="mb-48">Lorem ipsum dolor sit amet consectetur. Convallis lectus ut viverra ornare rutrum mi aenean viverra risus. Blandit
+                            pharetra quam <br class="d-sm-block d-none"> dui euismod et mi et ante semper.</p>
+                        <a href="login.html" class="cus-btn-3">
+                            <span>Join Now</span>
+                            <span>Join Now</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- SIGN UP BANNER END -->
+
+        </div>
+        <!-- BG-GAME PAGE # 1 END -->
+
+        <!-- FOOTER START -->
+        <footer class="pt-64">
+            <div class="container-fluid">
+                <div class="footer-wrapper mb-48">
+                    <div class="footer-block">
+                        <a href="index.html">
+                            <img src="../../../../../../pixel/assets/media/logo.png" alt="" class="mb-24">
+                        </a>
+                        <p class="light-gray mb-24">Lorem ipsum dolor sit amet consectetur. Ut elementum vitae bibendum mi arcu consectetur viverra
+                            accumsan felis pharetra.</p>
+                        <p class="lightest-gray fw-400">@2024 All Rights Copyright <span class="color-primary fw-600">Pyxel.</span> Design & Developed By <span class="color-primary fw-600">UIPARADOX </span></p>
+                    </div>
+                    <div class="footer-block block-2">
+                        <ul class="list-unstyled m-0 p-0">
+                            <li class="mb-24"><h5 class="fw-500">Information</h5></li>
+                            <li class="mb-12 light-gray"><a href="index.html">Home</a></li>
+                            <li class="mb-12 light-gray"><a href="tournament.html">Tournament</a></li>
+                            <li class="mb-12 light-gray"><a href="games.html">Games</a></li>
+                            <li class="light-gray"><a href="../../../../../../pixel/live-stream.html">Live Stream</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block block-2">
+                        <ul class="list-unstyled m-0 p-0">
+                            <li class="mb-24"><h5 class="fw-500">Quick Links</h5></li>
+                            <li class="mb-12 light-gray"><a href="signup.html">Account</a></li>
+                            <li class="mb-12 light-gray"><a href="about.html">About Us</a></li>
+                            <li class="light-gray"><a href="../../../../../../pixel/contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block block-2">
+                        <h5 class="fw-500 mb-24">Social Media</h5>
+                        <ul class="list-unstyled social-icons m-0">
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+                                        fill="none">
+                                        <path
+                                            d="M23.4999 8.32422C24.0174 8.32422 24.4374 7.90422 24.4374 7.38672V1.76172C24.4374 1.24422 24.0174 0.824219 23.4999 0.824219H17.8749C14.2562 0.824219 11.3124 3.76797 11.3124 7.38672V12.0742H8.49994C7.98244 12.0742 7.56244 12.4942 7.56244 13.0117V18.6367C7.56244 19.1542 7.98244 19.5742 8.49994 19.5742H11.3124V31.8867C11.3124 32.4042 11.7324 32.8242 12.2499 32.8242H17.8749C18.3924 32.8242 18.8124 32.4042 18.8124 31.8867V19.5742H22.5624C23.0206 19.5742 23.4118 19.243 23.4874 18.7911L24.4249 13.1661C24.4699 12.8942 24.3937 12.6161 24.2156 12.4055C24.0374 12.1955 23.7756 12.0742 23.4999 12.0742H18.8124V8.32422H23.4999ZM17.8749 13.9492H22.3931L21.7681 17.6992H17.8749C17.3574 17.6992 16.9374 18.1192 16.9374 18.6367V30.9492H13.1874V18.6367C13.1874 18.1192 12.7674 17.6992 12.2499 17.6992H9.43744V13.9492H12.2499C12.7674 13.9492 13.1874 13.5292 13.1874 13.0117V7.38672C13.1874 4.80234 15.2906 2.69922 17.8749 2.69922H22.5624V6.44922H17.8749C17.3574 6.44922 16.9374 6.86922 16.9374 7.38672V13.0117C16.9374 13.5292 17.3574 13.9492 17.8749 13.9492Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+                                        fill="none">
+                                        <path
+                                            d="M16.3149 32.8241C16.209 32.8241 16.103 32.8241 15.9963 32.8236C13.488 32.8297 11.1704 32.766 8.9165 32.6288C6.8501 32.5031 4.96387 31.789 3.46143 30.5639C2.01172 29.3817 1.02173 27.7834 0.519043 25.8136C0.081543 24.0988 0.0583496 22.4154 0.0361328 20.7873C0.0200195 19.619 0.00341797 18.2348 0 16.8271C0.00341797 15.4135 0.0200195 14.0292 0.0361328 12.861C0.0583496 11.2331 0.081543 9.54971 0.519043 7.83463C1.02173 5.8649 2.01172 4.26651 3.46143 3.08438C4.96387 1.85928 6.8501 1.14517 8.91675 1.01944C11.1707 0.882479 13.4888 0.818514 16.0024 0.824617C18.5115 0.819246 20.8284 0.882479 23.0823 1.01944C25.1487 1.14517 27.0349 1.85928 28.5373 3.08438C29.9873 4.26651 30.977 5.8649 31.4797 7.83463C31.9172 9.54947 31.9404 11.2331 31.9626 12.861C31.9788 14.0292 31.9956 15.4135 31.9988 16.8212V16.8271C31.9956 18.2348 31.9788 19.619 31.9626 20.7873C31.9404 22.4152 31.9175 24.0985 31.4797 25.8136C30.977 27.7834 29.9873 29.3817 28.5373 30.5639C27.0349 31.789 25.1487 32.5031 23.0823 32.6288C20.9238 32.7602 18.7065 32.8241 16.3149 32.8241ZM15.9963 30.8417C18.4639 30.8475 20.7295 30.785 22.9304 30.6513C24.4929 30.5563 26.336 29.5314 27.4459 28.6264C28.4717 27.7897 29.1783 26.6354 29.5457 25.1955C29.91 23.768 29.931 22.2353 29.9512 20.7531C29.9671 19.5927 29.9837 18.2182 29.9871 16.8241C29.9837 15.4298 29.9671 14.0556 29.9512 12.8952C29.931 11.413 29.91 9.88028 29.5457 8.45255C29.1783 7.0126 28.4717 5.85831 27.4459 5.02164C26.336 4.11685 24.4929 3.12197 22.9304 3.027C20.7295 2.89297 18.4639 2.8312 16.0022 2.83657C13.5352 2.83071 11.2693 2.9003 9.06836 3.03434C7.50586 3.12931 5.83368 3.79941 4.72382 4.7042C3.69794 5.54087 2.80141 7.0126 2.43397 8.45255C2.06972 9.88028 2.04872 11.4128 2.02846 12.8952C2.01259 14.0565 1.99599 15.4318 1.99257 16.8271C1.99599 18.2162 2.01259 19.5917 2.02846 20.7531C2.04872 22.2353 2.06972 23.768 2.43397 25.1955C2.80141 26.6354 3.50795 27.7897 4.53383 28.6264C5.64369 29.5312 7.50586 30.5563 9.06836 30.6513C11.2693 30.7853 13.5356 30.8478 15.9963 30.8417ZM15.9368 24.6366C11.6291 24.6366 8.12427 21.132 8.12427 16.8241C8.12427 12.5163 11.6291 9.01163 15.9368 9.01163C20.2446 9.01163 23.7493 12.5163 23.7493 16.8241C23.7493 21.132 20.2446 24.6366 15.9368 24.6366ZM16.0022 10.8307C12.4896 10.8307 10.0175 13.3028 10.0175 16.8212C10.0175 19.7504 12.2325 22.8415 15.9676 22.8415C18.8971 22.8415 21.9427 20.0663 21.9427 16.8212C21.9427 13.892 19.708 10.8307 16.0022 10.8307ZM24.6243 6.51163C23.5889 6.51163 22.7493 7.35098 22.7493 8.38663C22.7493 9.42227 23.5889 10.2616 24.6243 10.2616C25.6599 10.2616 26.4993 9.42227 26.4993 8.38663C26.4993 7.35098 25.6599 6.51163 24.6243 6.51163Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+                                        fill="none">
+                                        <path
+                                            d="M7.5249 10.8657H1.5C0.982178 10.8657 0.5625 11.2856 0.5625 11.8032V31.8867C0.5625 32.4045 0.982178 32.8242 1.5 32.8242H7.5249C8.04272 32.8242 8.4624 32.4045 8.4624 31.8867V11.8032C8.4624 11.2856 8.04272 10.8657 7.5249 10.8657ZM6.5874 30.9492H2.4375V12.7407H6.5874V30.9492Z"
+                                            fill="white" />
+                                        <path
+                                            d="M4.5127 0.824219C2.33447 0.824219 0.5625 2.59619 0.5625 4.77393C0.5625 6.95215 2.33447 8.72388 4.5127 8.72388C6.69067 8.72388 8.4624 6.9519 8.4624 4.77393C8.4624 2.59619 6.69067 0.824219 4.5127 0.824219ZM4.5127 6.84888C3.36841 6.84888 2.4375 5.91821 2.4375 4.77393C2.4375 3.62988 3.36841 2.69922 4.5127 2.69922C5.65674 2.69922 6.5874 3.62988 6.5874 4.77393C6.5874 5.91821 5.65674 6.84888 4.5127 6.84888Z"
+                                            fill="white" />
+                                        <path
+                                            d="M22.5881 10.7332C21.1631 10.7332 19.7585 11.0767 18.5007 11.7192C18.458 11.241 18.0564 10.8657 17.5669 10.8657H11.5415C11.0239 10.8657 10.604 11.2856 10.604 11.8032V31.8867C10.604 32.4045 11.0239 32.8242 11.5415 32.8242H17.5669C18.0847 32.8242 18.5044 32.4045 18.5044 31.8867V20.8408C18.5044 19.4199 19.6606 18.2639 21.0815 18.2639C22.5024 18.2639 23.6582 19.4199 23.6582 20.8408V31.8867C23.6582 32.4045 24.0781 32.8242 24.5957 32.8242H30.6208C31.1387 32.8242 31.5583 32.4045 31.5583 31.8867V19.7034C31.5583 14.7571 27.5344 10.7332 22.5881 10.7332ZM29.6833 30.9492H25.5334V20.8408C25.5334 18.386 23.5364 16.3889 21.0818 16.3889C18.6267 16.3889 16.6294 18.386 16.6294 20.8408V30.9492H12.4792V12.7407H16.6294V13.4333C16.6294 13.7939 16.8362 14.1226 17.1614 14.2786C17.4863 14.4346 17.8721 14.3901 18.1536 14.1648C19.4231 13.1465 20.9568 12.6082 22.5881 12.6082C26.5005 12.6082 29.6833 15.791 29.6833 19.7034V30.9492Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+                                        fill="none">
+                                        <path
+                                            d="M18.9893 14.374L30.6459 0.824219H27.8837L17.7623 12.5893L9.67835 0.824219H0.354492L12.579 18.6152L0.354492 32.8242H3.11688L13.8053 20.3999L22.3426 32.8242H31.6664L18.9887 14.374H18.9893ZM15.2059 18.7719L13.9673 17.0003L4.11221 2.9037H8.35508L16.3082 14.2801L17.5468 16.0517L27.885 30.8393H23.6421L15.2059 18.7726V18.7719Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="index.html" class="mt-sm-0 mt-32">
+                    <img src="../../../../../../pixel/assets/media/ft-logo.png" alt="">
+                </a>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+    </div>
+    <!-- Main Wrapper End -->
+
+    <!-- Back To Top Start -->
+    <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+
+    <!-- Mobile Menu Start -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+        <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+        <div class="logo-box">
+            <a href="index.html" aria-label="logo image"><img src="../../../../../../pixel/assets/media/logo.png" alt=""></a>
+        </div>
+        <div class="mobile-nav__container"></div>
+        <ul class="mobile-nav__contact list-unstyled">
+            <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:example@company.com">example@company.com</a>
+            </li>
+            <li>
+            <i class="fa fa-phone-alt"></i>
+            <a href="tel:+12345678">+123 (4567) -890</a>
+            </li>
+        </ul>
+        <div class="mobile-nav__social">
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+    </div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script src="../../../../../../pixel/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../../../../../../pixel/assets/js/vendor/jquery-3.6.3.min.js"></script>
+
+    <script src="../../../../../../pixel/assets/js/app.js"></script>
+
+</body>
+
+</html>
